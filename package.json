@@ -2,9 +2,18 @@
   "name": "pick-comments",
   "version": "0.1.0",
   "description": "Pick comments from source code",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha ./test.js",
+    "lint": "eslint . || true",
+    "version": "auto-changelog -p -l false -b false && git add CHANGELOG.md"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -e $GIT_PARAMS",
+      "pre-commit": "npx eslint . && npm run test",
+      "pre-push": "npx eslint ."
+    }
   },
   "repository": {
     "type": "git",
@@ -25,5 +34,16 @@
   "bugs": {
     "url": "https://github.com/libook/pick-comments/issues"
   },
-  "homepage": "https://github.com/libook/pick-comments#readme"
+  "homepage": "https://github.com/libook/pick-comments#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^8.2.0",
+    "@commitlint/config-conventional": "^8.2.0",
+    "auto-changelog": "^1.16.2",
+    "eslint": "^6.6.0",
+    "husky": "^3.0.9",
+    "mocha": "^6.2.2"
+  },
+  "dependencies": {
+    "glob": "^7.1.6"
+  }
 }
