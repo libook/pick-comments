@@ -1,0 +1,29 @@
+{
+  "name": "pick-comments",
+  "version": "0.1.0",
+  "description": "Pick comments from source code",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/libook/pick-comments.git"
+  },
+  "keywords": [
+    "comment",
+    "tool",
+    "source",
+    "code"
+  ],
+  "author": {
+    "name": "LiBook",
+    "email": "libook7@gmail.com",
+    "url": "https://github.com/libook"
+  },
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/libook/pick-comments/issues"
+  },
+  "homepage": "https://github.com/libook/pick-comments#readme"
+}
