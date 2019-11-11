@@ -1,6 +1,6 @@
 {
   "name": "pick-comments",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Pick comments from source code",
   "main": "lib/index.js",
   "scripts": {
