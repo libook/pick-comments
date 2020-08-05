@@ -10,7 +10,7 @@
   },
   "husky": {
     "hooks": {
-      "commit-msg": "commitlint -e $GIT_PARAMS",
+      "commit-msg": "commitlint -e $HUSKY_GIT_PARAMS",
       "pre-commit": "npx eslint . && npm run test",
       "pre-push": "npx eslint ."
     }
@@ -36,12 +36,12 @@
   },
   "homepage": "https://github.com/libook/pick-comments#readme",
   "devDependencies": {
-    "@commitlint/cli": "^8.2.0",
-    "@commitlint/config-conventional": "^8.2.0",
-    "auto-changelog": "^1.16.2",
-    "eslint": "^6.6.0",
-    "husky": "^3.0.9",
-    "mocha": "^6.2.2"
+    "@commitlint/cli": "^9.1.2",
+    "@commitlint/config-conventional": "^9.1.1",
+    "auto-changelog": "^2.2.0",
+    "eslint": "^7.6.0",
+    "husky": "^4.2.5",
+    "mocha": "^8.1.1"
   },
   "dependencies": {
     "glob": "^7.1.6"
