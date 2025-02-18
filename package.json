@@ -41,7 +41,7 @@
     "auto-changelog": "^2.2.0",
     "eslint": "^7.6.0",
     "husky": "^7.0.1",
-    "mocha": "^9.0.3"
+    "mocha": "^11.1.0"
   },
   "dependencies": {
     "glob": "^7.1.6"
